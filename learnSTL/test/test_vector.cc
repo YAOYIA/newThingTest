@@ -22,8 +22,8 @@ int main()
     }
     std::cout<<std::endl;
 
-    // vec[0] = 999;
-    // std::cout << "修改第一个元素后: " << vec[0] << std::endl;
+    vec[0] = 999;
+    std::cout << "修改第一个元素后: " << vec[0] << std::endl;
 
     // 测试 pop_back
     vec.pop_back();

@@ -64,10 +64,10 @@ public:
     {
         return data[index];
     }
-    // T& operator[](size_t index)
-    // {
-    //     return data[index];
-    // }
+    T& operator[](size_t index)
+    {
+        return data[index];
+    }
 private:
     T *data;
     size_t _size;

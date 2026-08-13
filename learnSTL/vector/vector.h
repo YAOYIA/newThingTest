@@ -24,6 +24,19 @@ public:
         delete [] data;
     }
 
+    //迭代器
+    using iterator = T*;
+    using iterator_const = const T*;
+
+    iterator begin()
+    {
+        return data;
+    }
+    iterator end()
+    {
+        return data + _size;
+    }
+
     size_t size() {return _size;}
     size_t capacity() {return _capacity;}
 

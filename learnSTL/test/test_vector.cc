@@ -25,6 +25,12 @@ int main()
     vec[0] = 999;
     std::cout << "修改第一个元素后: " << vec[0] << std::endl;
 
+    for (wstl::vector<int>::iterator it = vec.begin(); it != vec.end(); it++)
+    {
+        std::cout << *it << std::endl;
+    }
+    
+
     // 测试 pop_back
     vec.pop_back();
     std::cout << "\n执行一次 pop_back 后 - 大小: " << vec.size() << ", 容量: " << vec.capacity() << std::endl;

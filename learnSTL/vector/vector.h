@@ -26,7 +26,7 @@ public:
 
     //迭代器
     using iterator = T*;
-    using iterator_const = const T*;
+    using const_iterator = const T*;
 
     iterator begin()
     {
@@ -37,6 +37,15 @@ public:
         return data + _size;
     }
 
+    const_iterator begin() const
+    {
+        return data;
+    }
+
+    const_iterator end() const
+    {
+        return data + _size;
+    }
     size_t size() {return _size;}
     size_t capacity() {return _capacity;}
 
